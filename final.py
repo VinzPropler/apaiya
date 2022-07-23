@@ -10,7 +10,7 @@ print(" ToolDdosByVinzPropler ")
 print("  JANGAN DI RECODE YA AJGG ")
 
 ip = str(input(" IP TARGET:"))
-url=str(input (" URL TARGET:"))
+url= str(input (" URL TARGET:"))
 port = int(input(" PORT:"))
 choice = str(input(" GASKEN KIRIM JANDA??(y/n):"))
 times = int(input(" PACKETS:"))
